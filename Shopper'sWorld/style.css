@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
 html,body{
     width: 100%;
     height: 100%;
@@ -5,6 +13,7 @@ html,body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: #FDFDF9;
 }
 a{
     text-decoration: none;
@@ -17,11 +26,68 @@ a:hover{
 
  /* nav section  */
 .fourth_sec_nav{
+    /* position: fixed; */
     background-color: #FDFDF9;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+
+.second_sectionofnav{
+    /* position: fixed; */
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first_sec_nav{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.first_sec_nav>div{
+    padding: 0px 10px;
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(158, 154, 154, 0.767);
+}
+.first_sec_nav>div:nth-child(1){
+    border-right: none;
+}
+.first_sec_nav>a{
+    width: 100%;
+    height: 100%;
+}
+.first_sec_nav>div>a>img{
+    width: 100%;
+    height: 100%;
+}
+i{
+    color: #c8c9ca;
+}
+#inputfield>input{
+    width: 254px;
+    height: 32px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid rgb(206, 201, 201);
+    padding:  0 0 0 15px;
+    font-size: 12px;
+    position: relative;
+}
+#inputifield>a{
+    position: absolute;
+    left: 10%;
 }
 
  /* nav section end  */
@@ -31,11 +97,12 @@ a:hover{
     width: 90%;
     height: 83.1406px;
     margin: 50px  auto;
+    background-image: url("https://images.ctfassets.net/5de70he6op10/g4Rao5dp4XYh9mHJ31Mku/d4fa659fb2753c2aba8ff20538ba126f/121322_Upto50Off_SelectGifting_HPGSecondaryBanner_LS.jpg?w=2882&q=80&fm=webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-#upperposter>picture>img, #upperposter>picture>source{
-    width: 100%;
-    height: 100%;
-}
+
+
 
 #image_section{
     width: 90%;
@@ -47,31 +114,50 @@ a:hover{
 #image_section>img{
     width: 100%;
 }
-#posterimage,#posterimage2, #posterimage3{
+#posterimage{
+    background-image: url("https://images.ctfassets.net/5de70he6op10/4HydoM22nviTQ7ogIXrduJ/a7e098f7d22cf03de5087f1bfcbabdbd/HPGModule_LS.jpg?w=2640&q=80&fm=webp");
     width: 90%;
-    margin: 50px  auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 563.281px;
+    margin: 50px auto;
     position: relative;
 }
-#posterimage>img, #posterimage2>img, #posterimage3>img{
+#posterimage2{
+    background-image: url("https://images.ctfassets.net/5de70he6op10/4Coxu47V0tyfirEz2UcoJM/176476dd10f81019582c3e3de68eaefa/LS_M4_Winterwhites.jpg?w=2641&q=80&fm=webp");
+    width: 90%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 563.281px;
-    background-size: cover;
-
+    margin: 50px auto;
+    position: relative;
 }
-#posterimage>div , #posterimage2>div, #posterimage3>div{
+#posterimage3{
+    background-image: url("https://images.ctfassets.net/5de70he6op10/6smg43UznC0EXEEvtUZOeK/2d857986576d95ecf780716a37fc0b77/LS_M5_BHLDN.jpg?w=2641&q=80&fm=webp");
+    width: 90%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 563.281px;
+    margin: 50px auto;
+    position: relative;
+}
+.anchor{
+    background-color: #fff;
+    padding: 10px 20px;
     position: absolute;
-    bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #fff;
-    padding: 10px 30px;
+    top: 85%;
 }
-#posterimage>a, #posterimage2>a , #posterimage3>a{
-    
-    font-size: 16px;
+.anchor>a{
+    width: 90%;
+    margin: auto;
 }
-#posterimage>div>a:hover , #posterimage2>div>a:hover, #posterimage3>div>a:hover{
-    border-bottom: 1px solid rgb(51, 51, 51);
+.anchor>a:hover{
+    border-bottom: 1px solid black;
 }
+
+
 
 
 
@@ -81,14 +167,18 @@ a:hover{
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 10px;
+    gap: 10px;
 }
 .threeimage>div>img{
-    width: 396.328px;
-    height: 416.688px;
+    width: 100%;
+    height: 350px;
 }
 .threeimage>div{
     position: relative;
+    margin-left: 20px;
+}
+.threeimage>div:nth-child(1){
+    margin-left: 0px;
 }
 .threeimage>div>div{
     position: absolute;
@@ -131,16 +221,12 @@ a:hover{
 .aboutUs>div{
     width: 1229px;
     height: 140px;
-    margin:auto;
+    margin: 0px auto;
 }
 .footer{
     background-color: #F7F6F2;
-}
-.email{
-    height: 184.139px;
-    width: 90%;
-    margin: auto;
-}
+}  
+
 .email_form{
     display: flex;
     align-items: center;
@@ -241,9 +327,159 @@ a:hover{
 
 /* footer  */
 
+   /* kid section  */
+.main_section{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.main_section .categroy_section{
+    width: 30%;
+    height: 100px;
+    padding: 50px 100px;
+}
+.categroy_section>ul{
+        width: 80%;
+        margin: 40px auto;
+}
+.filterproduct{
+    margin: 40px auto;
+    padding: 10px;
+}
+.filterproduct>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.filterproduct>div>a{
+    font-size: 20px;
+}
+.categroy_section>ul>li{
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    list-style-type: none;
+
+}
+.main_section .product_section{
+    width: 70%;
+}
+.main_section #products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: 0px auto;
+    gap: 20px;
+}
+#products>div{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-color: #EEEEEE;
+    height: 430px;
+}
+#products>div>img{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    width: 100%;
+    height: 70%;
+}
+#products>div .price{
+    color: rgb(43, 125, 131);
+}
+.fitler_div{
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
+
+ /* form  */
+    form{
+        width: 40%;
+        margin: 50px auto;
+        border: 1px solid rgb(196, 237, 245);
+    }
+    /* .formsubmit{
+        margin: auto;
+    } */
+   input[type=text], input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+ }
+ 
+ input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+ }
+ 
+ hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+ }
+ 
+ /* Set a style for all buttons */
+ button {
+   background-color: #04AA6D;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
+ }
+ 
+ button:hover {
+   opacity:1;
+ }
+ 
+ /* Extra styles for the cancel button */
+ .cancelbtn {
+   padding: 14px 20px;
+   background-color: #f44336;
+ }
+ 
+ /* Float cancel and signup buttons and add an equal width */
+ .cancelbtn, .signupbtn {
+   float: left;
+   width: 50%;
+ }
+ 
+ /* Add padding to container elements */
+ .container {
+   padding: 16px;
+ }
+ 
+ /* Clear floats */
+ .clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
+ 
+ /* Change styles for cancel button and signup button on extra small screens */
+ @media screen and (max-width: 300px) {
+   .cancelbtn, .signupbtn {
+     width: 100%;
+   }
+ }
+
+
+
+
+   /* form end  */
 
 
 
@@ -254,13 +490,37 @@ a:hover{
 
         /* media query  */
 
-
         @media only screen and (max-width: 728px){
+            #upperposter{
+                background-image: url("https://images.ctfassets.net/5de70he6op10/VlF42RD2YGqCQ2JbrhXWm/164e5d0a8aa10e557595762dc062e207/121322_Upto50Off_SelectGifting_HPGSecondaryBanner_SS.jpg?w=1125&q=80&fm=webp");
+            }
+            #posterimage{
+                background-image: url("https://images.ctfassets.net/5de70he6op10/6Ef5MgM7iN4fCy1oMacWya/a93191773254a4f91933a94718c82e5c/HPGModule_SS_02.jpg?w=1125&q=80&fm=webp");
+            }
+            .anchor{
+                padding: 4px 4px;
+                text-align: center;
+            }
+            #posterimage2{
+                background-image: url("https://images.ctfassets.net/5de70he6op10/6k6GUoWHpLIDmRp3U15BCH/6a118bbbd9a170ce6e3ba8de82abb911/SS_M4.jpg?w=1125&q=80&fm=webp");
+            }
+            #posterimage3{
+                background-image: url("https://images.ctfassets.net/5de70he6op10/6mmuiCezV0sFs4MAnZTQcb/917d26b6b77b96f37be4d05121b27c68/SS_M5.jpg?w=1125&q=80&fm=webp");
+            }
             #upperposte{
                 min-height: 120px;
             }
             #image_section{
                 grid-template-columns: repeat(2,1fr);
+            }
+            .anchor>a{
+                font-size: 16px;
+            }
+            .threeimage{
+               grid-template-columns: 1fr;
+            }
+            .threeimage{
+                margin-left: 0px;
             }
           }
         /* @media only screen and (max-width: 728px) and (min-width: 200px) {
