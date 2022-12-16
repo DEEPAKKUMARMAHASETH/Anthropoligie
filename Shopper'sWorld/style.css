@@ -25,13 +25,40 @@ a:hover{
 }
 
  /* nav section  */
+ .login{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 76%;
+    align-items: center;
+    /* font-size: 20px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.login:hover{
+    background-color: rgb(68, 243, 14);
+}
+.login>a{
+    line-height: 14px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border: 1px solid rgb(52, 233, 209);
+    padding: 10px 20px;
+ }
 .fourth_sec_nav{
     /* position: fixed; */
+    width: 90%;
+    margin: auto;
     background-color: #FDFDF9;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 /* .sticky {
     position: fixed;
@@ -158,7 +185,18 @@ i{
 }
 
 
-
+#filter{
+    width: 200px;
+    height: 60x;
+}
+#filter>option{
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(176, 235, 240);
+}
+option:active{
+    outline: none;
+}
 
 
 
@@ -211,84 +249,91 @@ i{
 
 /* footer  */
 .aboutUs{
-    padding-top: 20px;
-    border-top: 1px solid rgb(184, 184, 184);
-}
-#readmore, #privicy_policy{
-    color: blue;
-    border-bottom: 1px solid blue;
+    width: 100%;
+    margin: 50px 0px;
 }
 .aboutUs>div{
-    width: 1229px;
-    height: 140px;
-    margin: 0px auto;
+    width: 90%;
+    height: 100%;
+    margin: auto;
 }
-.footer{
-    background-color: #F7F6F2;
-}  
-
+.email{
+    width: 100%;
+    margin: 50px 0px;
+}
+.email>p{
+    width: 90%;
+    margin: 20px auto;
+}
 .email_form{
+    width: 90%;
+    margin: 0px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 50%;
-    transform: translateY(50%);
+}
+#signUp{
+    width: 40%;
+    height: 100%;
+}
+#form_signup{
+    width: 60%;
+}
+#form_signup>form{
+    width: 100%;
+    height: 100%;
+    margin-left: 50px;
 }
 #emailinput{
-    width: 448.375px;
+    width: 60%;
     height: 45px;
-    border: 1px solid rgb(134, 132, 132);
+    border: 1px solid rgb(156, 138, 138);
+    outline: none;
 }
 #submit{
+    width: 20%;
     height: 45px;
-    width: 136.125px;
     background-color: #4B5666;
     border: none;
     color: white;
-    text-transform: uppercase;
-}
-.email_form>div:nth-child(1){
-    width: 470px;
-}
-.email_form>div>p{
-    color: rgb(94, 89, 89);
-    word-spacing: 4px;
-}
-.email>p{
-    margin-top: 60px;
-    color: rgb(82, 75, 75);
 }
 .help{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: 50px auto;
 }
 .help>div{
-    display: flex;
-    flex-direction: column;
-}
-.help>div>a{
-    margin-bottom: 10px;
+    display: grid;
 }
 .socialmedia{
     display: flex;
-    text-align: center;
     justify-content: center;
 }
-.socialmedia>div>a{
+.socialmedia>a{
     margin-right: 10px;
-    margin-left: 10px;
 }
 .socialmedia>div{
+    width: 10%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 }
+.socialmedia>div>a>i{
+    color: #3879f3;
+}
+
+
 #poster{
     width: 90%;
     height: 83.1406px;
     margin: 50px  auto;
     background-image: url("https://images.ctfassets.net/5de70he6op10/6QWLFz6Lw3Gua0R6sZm9OU/61d2acdd321f73a35d140957a266f02c/Holiday22_SiteFooter_DownloadTheApp_LS.jpg");
     background-size: cover;
+}
+.country{
+    text-align: center;
+    margin: 50px auto;
 }
 .country>a{
     margin-right: 20px;
@@ -297,9 +342,6 @@ i{
 }
 #uk{
     border: none;
-}
-.country{
-    text-align: center;
 }
 
 .policy{
@@ -402,10 +444,9 @@ i{
 
 
  /* form  */
-    form{
+    .forms{
         width: 40%;
         margin: 50px auto;
-        border: 1px solid rgb(196, 237, 245);
     }
     /* .formsubmit{
         margin: auto;
@@ -491,6 +532,28 @@ i{
         /* media query  */
 
         @media only screen and (max-width: 728px){
+            .second_sectionofnav{
+                flex-direction: column;
+            }
+            .second_sectionofnav>div{
+                margin: 4px 0px;
+            }
+            .login{
+                margin-top: 10%;
+                margin-left: 10%;
+            }
+            .first_sec_nav{
+                width: 100%;
+            }
+            #inputfield{
+                width: 100%;
+            }
+            #inputfield>input{
+                width: 90%;
+            }
+            .fourth_sec_nav{
+                display: none;
+            }
             #upperposter{
                 background-image: url("https://images.ctfassets.net/5de70he6op10/VlF42RD2YGqCQ2JbrhXWm/164e5d0a8aa10e557595762dc062e207/121322_Upto50Off_SelectGifting_HPGSecondaryBanner_SS.jpg?w=1125&q=80&fm=webp");
             }
