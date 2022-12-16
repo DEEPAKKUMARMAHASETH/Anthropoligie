@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Sarabun', sans-serif;
+    font-weight: 100;
 }
 html,body{
     width: 100%;
@@ -13,7 +16,15 @@ html,body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: #FDFDF9;
+    background-color: #f9fbfd;
+}
+#showemail{
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: rgba(9, 110, 156, 0.658);
+    font-family: 'Lobster', cursive;
+    /* font-weight: 400;/ */
+
 }
 a{
     text-decoration: none;
@@ -25,6 +36,28 @@ a:hover{
 }
 
  /* nav section  */
+ .firstnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    background-color: #1D3B66;
+    margin-bottom: 20px;
+ }
+ .firstnav>p{
+    margin-right: 50px;
+    color: white;
+ }
+ .firstnav>a{
+    color: white;
+    border-bottom: 1px solid black;
+    border-color: white;
+ }
+ .firstnav>a:hover{
+    color: rgb(84, 126, 243);
+    font-size: 15px;
+ }
  .login{
     width: 200px;
     height: 45px;
@@ -33,12 +66,35 @@ a:hover{
     justify-content: center;
     margin-left: 76%;
     align-items: center;
-    /* font-size: 20px; */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins','sans-serif';
 }
-.login:hover{
-    background-color: rgb(68, 243, 14);
+.login>div{
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 1px solid #1D3B66;
+    background-color: #1D3B66;
+    border-radius: 4px;
+    align-items: center;
+    line-height: 20px;
 }
+.login>div>a{
+    color: white;
+}
+.login>div:nth-child(2){
+    margin-right: none;
+}
+.login>div:nth-child(1):hover{
+    background-color: rgba(162, 167, 161, 0.849);
+    padding: 4px 9px;
+}
+.login>div:nth-child(1)>a:hover{
+    color: black;
+}
+.login>div:nth-child(2):hover{
+    background-color: rgba(153, 211, 142, 0.849);
+    padding: 4px 9px;
+}
+
 .login>a{
     line-height: 14px;
     width: 100%;
@@ -47,6 +103,7 @@ a:hover{
     text-align: center;
     align-items: center;
     margin: auto;
+    color: #3879f3;
     border: 1px solid rgb(52, 233, 209);
     padding: 10px 20px;
  }
@@ -224,7 +281,7 @@ option:active{
     left: 50%;
     transform: translateX(-50%);
     background-color: #fff;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 .threeimage>div>div>a{
     font-size: 16px;
@@ -238,9 +295,30 @@ option:active{
 
 
 
+
 /* upper section  end */
 
+ /* slider section  */
 
+#slider{
+    width: 90%;
+    height: 400px;
+    margin: 60px auto;
+}
+#slider>h3{
+    margin: 20px 0px;
+}
+.slider_card{
+    width: 100%;
+    height: 240pxpx;
+}
+.slider_card>img{
+    width: 100%;
+    height: 90%;
+}
+
+
+   /* slider section end  */
 
 
 
@@ -444,13 +522,13 @@ option:active{
 
 
  /* form  */
-    .forms{
+    #forms{
         width: 40%;
         margin: 50px auto;
     }
-    /* .formsubmit{
+    .formsubmit{
         margin: auto;
-    } */
+    }
    input[type=text], input[type=password] {
    width: 100%;
    padding: 15px;
@@ -470,9 +548,9 @@ option:active{
    margin-bottom: 25px;
  }
  
- /* Set a style for all buttons */
+ 
  button {
-   background-color: #04AA6D;
+   background-color: #1D3B66;
    color: white;
    padding: 14px 20px;
    margin: 8px 0;
@@ -485,32 +563,31 @@ option:active{
  button:hover {
    opacity:1;
  }
- 
- /* Extra styles for the cancel button */
+
  .cancelbtn {
    padding: 14px 20px;
-   background-color: #f44336;
+   background-color: #6195e4;
  }
  
- /* Float cancel and signup buttons and add an equal width */
+
  .cancelbtn, .signupbtn {
    float: left;
    width: 50%;
  }
  
- /* Add padding to container elements */
+
  .container {
    padding: 16px;
  }
  
- /* Clear floats */
+
  .clearfix::after {
    content: "";
    clear: both;
    display: table;
  }
  
- /* Change styles for cancel button and signup button on extra small screens */
+
  @media screen and (max-width: 300px) {
    .cancelbtn, .signupbtn {
      width: 100%;
