@@ -19,9 +19,15 @@ form.addEventListener("submit", (event) =>{
             pwd: form.psw.value,
             pwd2: form.psw_repeat.value
         }
-        data.push(obj);
-        localStorage.setItem("userData",JSON.stringify(data));
-        console.log(data);
-        alert("User Registered");
+        if(obj.pwd !== obj.pwd2){
+            alert("Password not matching");
+        }else{
+
+            data.push(obj);
+            localStorage.setItem("userData",JSON.stringify(data));
+            console.log(data);
+            alert("User Registered");
+            window.location = "login.html";
+        }
     }
 });

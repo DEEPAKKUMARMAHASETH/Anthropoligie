@@ -61,11 +61,3 @@ function showData(data){
         productsbody.append(div);
     });
 }
-
-
-
-
-let form = document.getElementsByTagName("form");
-
-
-console.log(form);
